@@ -1,0 +1,39 @@
+{
+    "name": "Open-WebUI",
+    "version": "0.5.10",
+    "slug": "open-webui",
+    "description": "Open-WebUI",
+    "url": "https://github.com/jorgon/homeassist_addonsn",
+    "arch": [
+      "armhf",
+      "armv7",
+      "aarch64",
+      "amd64",
+      "i386"
+    ],
+    "startup": "application",
+    "boot": "auto",
+    "icon": "ico.png",
+    "logo": "ico.png",
+    "webui": "http://[HOST]:[PORT:3000]/",
+    "map": [
+      "ssl:ro",
+      "backup:rw",
+      "share:rw",
+      "media:rw",
+      "config:ro"
+    ],
+    "apparmor": true,
+    "ports": {
+      "3000/tcp": 8080
+    },
+    "ports_description": {
+      "3000/tcp": "Web interface"
+    },
+    "options": {
+      
+    },
+    "schema": {
+      
+    }
+  }
